@@ -1,0 +1,79 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@import "settings";
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+body {
+  color: $color-white;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+:hover {
+  @include transition(0.25s);
+}
+
+.site-header {
+  @include outer-container;
+
+  color: $color-white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+  font: {
+    family: $pt-sans;
+    weight: 400;
+  }
+  
+  .site-branding {
+    @include span-columns(2);
+    @include pad;
+    @include transparent_bg($color-black, 0.8);
+    
+    @include respond-to ($galaxy) {
+      @include span-columns(12);
+    }
+    
+    @include respond-to ($mobile) {
+      @include span-columns(12);
+    }
+
+    text-align: center;
+  }
+  
+  .social {
+    margin-top: 20px;
+    
+    i {
+      color: $color-white;
+      
+      &.icon-facebook:hover {
+        color: $color-fb;
+      }
+      
+      &.icon-twitter:hover {
+        color: $color-tw;
+      }
+      
+      &.icon-youtube:hover {
+        color: $color-yt;
+      }
+    }    
+  }
+}

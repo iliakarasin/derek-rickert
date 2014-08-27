@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* Smaller Tablets */
+/* Galaxy S3 */
+/* iPad & Larger Tablets */
+/* Desktop */
+/* Large Screens */
+@font-face {
+  font-family: "social-icons";
+  src: url("../font/social-icons.eot");
+  src: url("../font/social-icons.eot?#iefix") format("embedded-opentype"), url("../font/social-icons.woff") format("woff"), url("../font/social-icons.ttf") format("truetype"), url("../font/social-icons.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "social-icons";
+    src: url("../font/social-icons.svg") format("svg");
+  }
+}
+/* line 54, ../sass/settings.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "social-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+}
+
+/* line 79, ../sass/settings.scss */
+.icon-facebook:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 80, ../sass/settings.scss */
+.icon-youtube:before {
+  content: '\e801';
+}
+
+/* '' */
+/* line 81, ../sass/settings.scss */
+.icon-twitter:before {
+  content: '\e802';
+}
+
+/* '' */
